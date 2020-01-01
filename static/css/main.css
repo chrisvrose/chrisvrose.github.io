@@ -22,12 +22,14 @@ body{
 	transition: opacity 0.25s ease;
 	opacity: 0;
 	color:#bc7110;
-	content:'.';
+	content:'!';
 }
 .header:hover::after{
 	opacity: 1;
 }
-
+.para{
+	padding-bottom:0.5rem;
+}
 .link{
 	width:10rem;
 	margin:auto;
