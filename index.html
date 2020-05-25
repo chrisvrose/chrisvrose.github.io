@@ -1,23 +1,31 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Nasty Stuff</title>
-		<link rel="stylesheet" href="static/css/main.css" />
-		<link rel="shortcut icon" href="https://secure.gravatar.com/avatar/1f56e31aa75edc98a8b9bc08431c8214?s=16" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-	</head>
-	<body>
-		<div class="container">
-			<div class="header">Hi</div>
-			<div class="content">
-				<div class="para">
-					Were you looking for <a href="https://github.com/chrisvrose" target="_blank">me</a>?
-				</div>
-				<div class="para">
-					<object data="./static/projects/gitlab-white-small.svg" width="32" type="image/svg+xml" ></object>
-				</div>
+
+<head>
+	<title>Nasty Stuff</title>
+	<link rel="shortcut icon" href="https://secure.gravatar.com/avatar/1f56e31aa75edc98a8b9bc08431c8214?s=16" />
+	<link rel="stylesheet" href="static/css/main.css" />
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body style="display:none" onload="document.body.removeAttribute('style');">
+	<div class="container">
+		<div class="header">Hi</div>
+		<div class="content">
+			<div class="para need-spacer">
+				Were you looking for <a class="orange-highlight" href="https://github.com/chrisvrose"
+					target="_blank">me</a>?
 			</div>
-			
+			<div class="para icon-box">
+				<a href="https://gitlab.com/chrisvrose" target="_blank">
+					<div class="icon-wrapper">
+						<img src="./static/projects/gitlab-white-small.svg" alt="Gitlab logo" width="32" class="icon" id="gitlab-icon" />
+					</div>
+				</a>
+			</div>
 		</div>
-	</body>
+
+	</div>
+</body>
+
 </html>
