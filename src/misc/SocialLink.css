@@ -1,0 +1,12 @@
+.icon-wrapper{
+    margin:0.25rem;
+    padding:0.1rem;
+    transition: border 0.1s ease;
+    /* border:0 */
+}
+.icon-wrapper:hover{
+    border-bottom: 1px solid #bc7110;
+}
+.icon-wrapper:active{
+    border-bottom: 2px solid #bc7110;
+}
