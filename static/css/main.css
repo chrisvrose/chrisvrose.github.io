@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400');
+
+body{
+	background-color: #171710;
+	color: #c1c1b1;
+	/* display: block !important; */
+}
+
+.container{
+	padding:1.5rem 1.5rem 1.5rem 1.75rem;	
+	font-family: 'Open Sans',sans-serif;
+}
+.header{
+	font-weight:lighter;
+	font-size:2.5rem;
+	margin-bottom:0.25rem;
+	transition: color 0.25s ease-in;
+}
+.header:hover{
+	color: #bc7110;
+}
+.header::after{
+	transition: opacity 0.25s ease;
+	opacity: 0;
+	color:#bc7110;
+	content:'!';
+}
+.header:hover::after{
+	opacity: 1;
+}
+.para{
+	padding-bottom:0.5rem;
+}
+.link{
+	width:10rem;
+	margin:auto;
+}
+a.orange-highlight{
+	color:#c1c1b1;
+	text-decoration: none;
+	transition: color 0.5s ease;
+}
+div.need-spacer{
+	margin-bottom: 5rem;
+}
+.icon-box{
+	display: flex;
+	justify-content: center;
+	padding:auto;
+}
+.icon-wrapper{
+	border-radius: 1rem;
+	width: 2.5rem;
+	height: 2.5rem;
+	transition: background-color 0.5s ease;
+	vertical-align: center;
+	display:flex;
+	padding: auto;
+	justify-content: center;
+	align-items: center;
+}
+.icon-wrapper:hover{
+	background-color: #bc7110;	
+}
+
+img.icon{
+	margin: auto;
+}
+a.orange-highlight:hover{
+	color:#bc7110;
+}
