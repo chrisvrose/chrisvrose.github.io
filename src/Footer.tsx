@@ -7,7 +7,7 @@ export default class Footer extends React.Component {
         return (
             <div className="para icon-box">
                 <Social name="Gitlab" url="https://gitlab.com/chrisvrose" picUrl="./static/projects/gitlab-white-small.svg" />
-                <Social name="Github" url="#" picUrl="./static/projects/GitHub-Mark-Light-64px.png" />
+                <Social name="Github" url="https://github.com/chrisvrose" picUrl="./static/projects/GitHub-Mark-Light-64px.png" />
             </div>
         );
     }
