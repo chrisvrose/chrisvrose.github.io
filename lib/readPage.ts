@@ -14,6 +14,5 @@ export default async function readPage(fileid: string, topic: matterType) {
     //read file
     const file = await fs.readFile(paths);
     //process it
-    const mr = matter(file);
-    return mr;
+    return matter(file);
 }

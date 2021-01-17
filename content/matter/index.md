@@ -26,4 +26,4 @@ tech:
     - git
     - CI/CD
 ---
-I'm Atreya, and I'm a 3rd year CSE undergrad student.
+I'm a 3rd year CSE undergrad student, and I like to work on web technology, and formal languages.

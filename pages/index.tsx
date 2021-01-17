@@ -1,20 +1,28 @@
 import Head from 'next/head';
-import { FC } from 'react';
+import React, { FC } from 'react';
 import styles from '../styles/index.module.css';
 import { GetStaticProps } from 'next';
 import readPage from '../lib/readPage';
 import NameHeader from '../components/NameHeader';
-interface HomeProps {
-    name: string;
-    content: string;
-    links: { name: string; link: string }[];
-}
-const Home: FC<HomeProps> = function Home({ name, content, links }) {
+import matterIndexMatter from '../lib/types/matterIndexMatter';
+import StringToDivs from '../components/StringToDivs';
+interface HomeProps extends matterIndexMatter {}
+
+const Home: FC<HomeProps> = function Home({ data, content }) {
     return (
         <div className={`container ${styles.para}`}>
-            <NameHeader name={name} />
+            <NameHeader name={data.name} />
             <p>{content}</p>
-            {links.map((e, i) => {
+
+            <br />
+            <StringToDivs data={data.languages} />
+            <br />
+            <StringToDivs data={data.dbs} />
+            <br />
+            <StringToDivs data={data.tech} />
+
+            <br />
+            {data.links.map((e, i) => {
                 return (
                     <div key={i}>
                         <a href={e.link}>{e.name}</a>
@@ -29,10 +37,9 @@ export const getStaticProps: GetStaticProps<HomeProps> = async context => {
     const { data, content } = await readPage('index', 'matter');
     return {
         props: {
-            name: data.name,
+            data,
             content,
-            links: data.links,
-        },
+        } as HomeProps,
     };
 };
 
