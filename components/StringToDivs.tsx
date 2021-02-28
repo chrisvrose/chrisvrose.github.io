@@ -1,5 +1,10 @@
 import { FC } from 'react';
 
+
+/**
+ * Placeholder component to convert an array of strings into divs
+ * @param param0 
+ */
 const StringToDivs: FC<{ data: string[] }> = function StringToDivs({ data }) {
     return (
         <>

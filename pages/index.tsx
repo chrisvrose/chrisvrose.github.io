@@ -2,17 +2,19 @@ import Head from 'next/head';
 import React, { FC } from 'react';
 import styles from '../styles/index.module.css';
 import { GetStaticProps } from 'next';
-import readPage from '../lib/readPage';
+import {readMatter,matterType} from '../lib/readPage';
+import ContentProps from '../lib/types/ContentProps'
 import NameHeader from '../components/NameHeader';
-import matterIndexMatter from '../lib/types/matterIndexMatter';
 import StringToDivs from '../components/StringToDivs';
-interface HomeProps extends matterIndexMatter {}
+import matter from 'gray-matter';
 
-const Home: FC<HomeProps> = function Home({ data, content }) {
+export type HomeContentProps = ContentProps<matterType>;
+const Home: FC<HomeContentProps> = function Home({content:data}) {
+    
     return (
         <div className={`container ${styles.para}`}>
             <NameHeader name={data.name} />
-            <p>{content}</p>
+            <p>{data.desc}</p>
 
             <br />
             <StringToDivs data={data.languages} />
@@ -33,13 +35,12 @@ const Home: FC<HomeProps> = function Home({ data, content }) {
     );
 };
 
-export const getStaticProps: GetStaticProps<HomeProps> = async context => {
-    const { data, content } = await readPage('index', 'matter');
+export const getStaticProps: GetStaticProps<HomeContentProps> = async context => {
+    const content = await readMatter();
     return {
         props: {
-            data,
             content,
-        } as HomeProps,
+        },
     };
 };
 
