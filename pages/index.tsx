@@ -17,7 +17,7 @@ const Home: FC<HomeContentProps> = function Home({content:data}) {
             <p>{data.desc}</p>
 
             <br />
-            <StringToDivs data={data.languages} />
+            <StringToDivs data={data.languages.map(e=>e.name)} />
             <br />
             <StringToDivs data={data.dbs} />
             <br />
