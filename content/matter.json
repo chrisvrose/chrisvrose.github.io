@@ -1,38 +1,30 @@
-
 {
-  "name": "Atreya Bain",
-  "desc":"I'm a 3rd year CSE undergrad student, and I like to work on web technology, and formal languages.",
-  "links": [
-    {
-      "name": "Github",
-      "link": "https://github.com/chrisvrose"
-    },
-    {
-      "name": "Gitlab",
-      "link": "https://gitlab.com/chrisvrose"
-    },
-    {
-      "name": "Email",
-      "link": "mailto:atreyabain@gmail.com"
-    }
-  ],
-  "languages": [
-    {"name":"Javascript","icon":""},
-    {"name":"Typescript","icon":""},
-    {"name":"C/C++","icon":""},
-    {"name":"Java","icon":""},
-    {"name":"Python","icon":""},
-    {"name":"PHP","icon":""}
-  ],
-  "dbs": [
-    "MySQL",
-    "PostgreSQL",
-    "MongoDB"
-  ],
-  "tech": [
-    "Docker",
-    "AWS",
-    "git",
-    "CI/CD"
-  ]
+    "name": "Atreya Bain",
+    "alias": ["atreyabain", "chrisvrose", "kekvrose"],
+    "resume": "./static/resume.pdf",
+    "desc": "I'm a 3rd year CSE undergrad student, and I like to work on web technology, and formal languages.",
+    "links": [
+        {
+            "name": "Github",
+            "link": "https://github.com/chrisvrose"
+        },
+        {
+            "name": "Gitlab",
+            "link": "https://gitlab.com/chrisvrose"
+        },
+        {
+            "name": "Email",
+            "link": "mailto:atreyabain@gmail.com"
+        }
+    ],
+    "languages": [
+        { "name": "Javascript", "icon": "" },
+        { "name": "Typescript", "icon": "" },
+        { "name": "C/C++", "icon": "" },
+        { "name": "Java", "icon": "" },
+        { "name": "Python", "icon": "" },
+        { "name": "PHP", "icon": "" }
+    ],
+    "dbs": ["MySQL", "PostgreSQL", "MongoDB"],
+    "tech": ["Docker", "AWS", "git", "CI/CD"]
 }

@@ -9,22 +9,22 @@ import StringToDivs from '../components/StringToDivs';
 export type HomeContentProps = ContentProps<matterType>;
 
 // FIXME
-const Home: FC<HomeContentProps> = function Home({content:data}) {
+const Home: FC<HomeContentProps> = function Home({content}) {
     
     return (
         <div className={`container ${styles.para}`}>
-            <NameHeader name={data.name} />
-            <p>{data.desc}</p>
+            <NameHeader {...content} />
+            <p>{content.desc}</p>
 
             <br />
-            <StringToDivs data={data.languages.map(e=>e.name)} />
+            <StringToDivs data={content.languages.map(e=>e.name)} />
             <br />
-            <StringToDivs data={data.dbs} />
+            <StringToDivs data={content.dbs} />
             <br />
-            <StringToDivs data={data.tech} />
+            <StringToDivs data={content.tech} />
 
             <br />
-            {data.links.map((e, i) => {
+            {content.links.map((e, i) => {
                 return (
                     <div key={i}>
                         <a href={e.link}>{e.name}</a>
