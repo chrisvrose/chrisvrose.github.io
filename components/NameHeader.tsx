@@ -1,5 +1,5 @@
 import { FC } from 'react';
-import styles from '../styles/NameHeader.module.css';
+import styles from '../styles/NameHeader.module.scss';
 
 /**
  * Big name

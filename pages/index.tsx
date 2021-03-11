@@ -1,14 +1,14 @@
-import Head from 'next/head';
 import React, { FC } from 'react';
-import styles from '../styles/index.module.css';
+import styles from '../styles/index.module.scss';
 import { GetStaticProps } from 'next';
 import {readMatter,matterType} from '../lib/readPage';
 import ContentProps from '../lib/types/ContentProps'
 import NameHeader from '../components/NameHeader';
 import StringToDivs from '../components/StringToDivs';
-import matter from 'gray-matter';
 
 export type HomeContentProps = ContentProps<matterType>;
+
+// FIXME
 const Home: FC<HomeContentProps> = function Home({content:data}) {
     
     return (

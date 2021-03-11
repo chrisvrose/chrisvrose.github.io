@@ -6,6 +6,10 @@ export interface HeaderProps {
     title: string;
 }
 
+/**
+ * Modify header title
+ * @param param0 
+ */
 const Header: FC<HeaderProps> = function Header({ title }) {
     return (
         <>

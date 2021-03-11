@@ -1,5 +1,8 @@
-@use './global.scss';
+@use './colors.scss' as c;
 
 .name {
     font-weight: lighter;
+}
+.name-highlight {
+    color: c.$accent;
 }
