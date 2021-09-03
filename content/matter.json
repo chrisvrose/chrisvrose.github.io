@@ -28,16 +28,16 @@
     ],
     "languages": [
         {
+            "name": "Typescript",
+            "icon": "",
+            "smalldesc": "Hi"
+        },
+        {
             "name": "Javascript",
             "icon": "",
             "smalldesc": "Hi"
         },
 
-        {
-            "name": "Typescript",
-            "icon": "",
-            "smalldesc": "Hi"
-        },
         {
             "name": "C/C++",
             "icon": "",
