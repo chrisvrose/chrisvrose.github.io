@@ -18,11 +18,11 @@ const Home: FC<HomeContentProps> = function Home({ content }) {
 
             <br />
             <Languages languages={content.languages} />
-            {/* <StringToDivs data={content.languages.map(e => e.name)} /> */}
+
             <br />
-            <StringToDivs data={content.dbs} />
+            <StringToDivs content={content.dbs} />
             <br />
-            <StringToDivs data={content.tech} />
+            <StringToDivs content={content.tech} />
 
             <br />
             {content.links.map((e, i) => {

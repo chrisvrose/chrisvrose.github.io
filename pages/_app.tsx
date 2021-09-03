@@ -1,11 +1,16 @@
-import type { AppProps /*, AppContext */ } from 'next/app';
+import type { AppProps } from 'next/app';
 import Header from '../components/Header';
-// import "bootstrap/dist/css/bootstrap.min.css";
-import "../styles/global.scss";
+
+import '../styles/global.scss';
+/**
+ * Wrapper app component
+ * @param param0 Base components and page props
+ * @returns Wrapped component
+ */
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
-            <Header title='hello world'></Header>
+            <Header title='Hello!'></Header>
             <Component {...pageProps} />
         </>
     );

@@ -20,6 +20,7 @@ export async function readBlogPage(blogname: string) {
  * Shape of matter.json
  */
 export type matterType = Awaited<ReturnType<typeof readMatter>>;
+
 /**
  * Read front matter and present it
  */

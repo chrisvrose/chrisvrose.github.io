@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import React, { FC, useEffect } from 'react';
+import { FC } from 'react';
 
 export interface HeaderProps {
     title: string;
@@ -11,11 +11,9 @@ export interface HeaderProps {
  */
 const Header: FC<HeaderProps> = function Header({ title }) {
     return (
-        <>
-            <Head>
-                <title>{title}</title>
-            </Head>
-        </>
+        <Head>
+            <title>{title}</title>
+        </Head>
     );
 };
 
