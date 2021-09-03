@@ -1,5 +1,5 @@
 import React, { FC } from 'react';
-import { CardDeck } from 'react-bootstrap';
+import { Col, Row } from 'react-bootstrap';
 import { LanguageCard, languageCardTypes } from './LanguageCard';
 
 export type LanguagesProps = {
@@ -8,10 +8,14 @@ export type LanguagesProps = {
 
 export const Languages: FC<LanguagesProps> = ({ languages }) => {
     return (
-        <CardDeck>
+        <Row>
             {languages.map(e => {
-                return <LanguageCard key={e.name} {...e} />;
+                return (
+                    <Col>
+                        <LanguageCard key={e.name} {...e} />
+                    </Col>
+                );
             })}
-        </CardDeck>
+        </Row>
     );
 };
