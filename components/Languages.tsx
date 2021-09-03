@@ -1,18 +1,17 @@
-import { FC } from 'react';
+import React, { FC } from 'react';
+import { CardDeck } from 'react-bootstrap';
+import { LanguageCard, languageCardTypes } from './LanguageCard';
 
 export type LanguagesProps = {
-    languages: {
-        name: string;
-        icon: string;
-    }[];
+    languages: languageCardTypes[];
 };
 
 export const Languages: FC<LanguagesProps> = ({ languages }) => {
     return (
-        <div>
+        <CardDeck>
             {languages.map(e => {
-                return e.name;
+                return <LanguageCard key={e.name} {...e} />;
             })}
-        </div>
+        </CardDeck>
     );
 };

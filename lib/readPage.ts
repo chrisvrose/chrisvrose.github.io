@@ -2,6 +2,8 @@ import path from 'path';
 import matter from 'gray-matter';
 import { promises as fs } from 'fs';
 import { Awaited } from './types/Awaited';
+import { parsify } from './misc';
+
 /**
  * Read Blog file
  * @param blogname read blog file
@@ -12,10 +14,6 @@ export async function readBlogPage(blogname: string) {
     const file = await fs.readFile(paths);
     //process it
     return matter(file);
-}
-
-function parsify<T>(arg: T): T {
-    return JSON.parse(JSON.stringify(arg));
 }
 
 /**
@@ -37,5 +35,5 @@ export type projectsType = Awaited<ReturnType<typeof readProjects>>;
  * Read projects and return as JSON
  */
 export async function readProjects() {
-    return parsify(await import('../content/projects.json'));
+    return parsify(await import('../content/work.json'));
 }

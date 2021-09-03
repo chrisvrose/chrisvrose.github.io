@@ -1,8 +1,13 @@
+
 @use './colors.scss' as c;
-body {
-    background-color: c.$back;
-    color: c.$primary;
-}
+
+$body-bg: c.$back;
+$body-color: c.$primary;
+$primary: c.$accent;
+$dark: lighten( c.$back,10%);
+
+@import "../node_modules/bootstrap/scss/bootstrap";
+
 
 a {
     text-decoration: none;

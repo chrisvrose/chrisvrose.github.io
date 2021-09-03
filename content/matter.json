@@ -3,6 +3,15 @@
     "alias": ["atreyabain", "chrisvrose", "kekvrose"],
     "resume": "./static/resume.pdf",
     "desc": "I'm a 3rd year CSE undergrad student, and I like to work on web technology, and formal languages.",
+    "whatIDo": [
+        {
+            "name": "Web Technology",
+            "desc": "",
+            "tools": [""],
+            "proficiency": 4
+        }
+    ],
+
     "links": [
         {
             "name": "Github",
@@ -18,12 +27,37 @@
         }
     ],
     "languages": [
-        { "name": "Javascript", "icon": "" },
-        { "name": "Typescript", "icon": "" },
-        { "name": "C/C++", "icon": "" },
-        { "name": "Java", "icon": "" },
-        { "name": "Python", "icon": "" },
-        { "name": "PHP", "icon": "" }
+        {
+            "name": "Javascript",
+            "icon": "",
+            "smalldesc": "Hi"
+        },
+
+        {
+            "name": "Typescript",
+            "icon": "",
+            "smalldesc": "Hi"
+        },
+        {
+            "name": "C/C++",
+            "icon": "",
+            "smalldesc": "Hi"
+        },
+        {
+            "name": "Java",
+            "icon": "",
+            "smalldesc": "Hi"
+        },
+        {
+            "name": "Python",
+            "icon": "",
+            "smalldesc": "Hi"
+        },
+        {
+            "name": "PHP",
+            "icon": "",
+            "smalldesc": "Hi"
+        }
     ],
     "dbs": ["MySQL", "PostgreSQL", "MongoDB"],
     "tech": ["Docker", "AWS", "git", "CI/CD"]

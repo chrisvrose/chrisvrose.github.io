@@ -9,7 +9,7 @@ export type NameHeaderProps = {
 };
 
 /**
- * Big name
+ * Big name with switching alias
  * @param param0 Big Name props
  */
 const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, alias, resume }) {
