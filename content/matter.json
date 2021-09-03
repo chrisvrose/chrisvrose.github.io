@@ -2,7 +2,8 @@
     "name": "Atreya Bain",
     "alias": ["atreyabain", "chrisvrose", "kekvrose"],
     "resume": "./static/resume.pdf",
-    "desc": "I'm a 3rd year CSE undergrad student, and I like to work on web technology, and formal languages.",
+    "desc": "I'm a 3rd year CSE undergrad student.",
+    "descLine2": "I like to explore computer science technologies, but most of my work has been on web technology, and formal languages.",
     "whatIDo": [
         {
             "name": "Web Technology",
@@ -59,6 +60,22 @@
             "smalldesc": "Hi"
         }
     ],
-    "dbs": ["MySQL", "PostgreSQL", "MongoDB"],
-    "tech": ["Docker", "AWS", "git", "CI/CD"]
+    "miscTech": [
+        {
+            "type": "dbs",
+            "content": [
+                { "name": "MySQL", "proficiency": 4 },
+                { "name": "PostgreSQL", "proficiency": 4 },
+                { "name": "MongoDB", "proficiency": 4 }
+            ]
+        },
+        {
+            "type": "Technologies",
+            "content": [
+                { "name": "Docker", "proficiency": 4 },
+                { "name": "AWS", "proficiency": 4 },
+                { "name": "git", "proficiency": 4 }
+            ]
+        }
+    ]
 }

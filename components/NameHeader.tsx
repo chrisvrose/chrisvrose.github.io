@@ -12,7 +12,7 @@ export type NameHeaderProps = {
  * @param param0 Big Name props
  */
 const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, alias, resume }) {
-    const [canSwitch, setCanSwitch] = useState(false);
+    const [canSwitch, setCanSwitch] = useState(true);
     const [currentAliasIndex, setCurrentAliasIndex] = useState(0);
     /** Repeatedly switch between names as long as it is allowed */
     useEffect(() => {
@@ -31,8 +31,8 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, alias, resum
                 aka{' '}
                 <span
                     className={styles.nameHighlight}
-                    onMouseOver={() => setCanSwitch(true)}
-                    onMouseOut={() => setCanSwitch(false)}
+                    onMouseOver={() => setCanSwitch(false)}
+                    onMouseOut={() => setCanSwitch(true)}
                 >
                     {alias[currentAliasIndex]}
                 </span>

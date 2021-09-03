@@ -15,14 +15,15 @@ const Home: FC<HomeContentProps> = function Home({ content }) {
         <div className={`container ${styles.para}`}>
             <NameHeader {...content} />
             <p className={styles.desc}>{content.desc}</p>
+            <p className={styles.desc}>{content.descLine2}</p>
 
             <br />
             <Languages languages={content.languages} />
 
             <br />
-            <StringToDivs content={content.dbs} />
+            <StringToDivs content={content.miscTech[0].content.map(e => e.name)} />
             <br />
-            <StringToDivs content={content.tech} />
+            <StringToDivs content={content.miscTech[1].content.map(e => e.name)} />
 
             <br />
             {content.links.map((e, i) => {
