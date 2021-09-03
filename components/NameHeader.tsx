@@ -1,5 +1,4 @@
-import React from 'react';
-import { FC } from 'react';
+import { FC, useEffect, useState } from 'react';
 import styles from '../styles/NameHeader.module.scss';
 
 export type NameHeaderProps = {
@@ -13,16 +12,16 @@ export type NameHeaderProps = {
  * @param param0 Big Name props
  */
 const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, alias, resume }) {
-    const [canSwitch, setCanSwitch] = React.useState(false);
-    const [currentAliasIndex, setCurrentAliasIndex] = React.useState(0);
-    /** Repeatedly switch between names  */
-    React.useEffect(() => {
+    const [canSwitch, setCanSwitch] = useState(false);
+    const [currentAliasIndex, setCurrentAliasIndex] = useState(0);
+    /** Repeatedly switch between names as long as it is allowed */
+    useEffect(() => {
         setTimeout(() => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % alias.length), 1000);
-    }, [currentAliasIndex, canSwitch]);
+    }, [currentAliasIndex, canSwitch, alias.length]);
     return (
         <div className={styles.header}>
             <h1 className={styles.name}>
-                Hi, I'm{' '}
+                Hi, I&apos;m{' '}
                 <a className={styles.nameHighlight} href={resume}>
                     {name}
                 </a>

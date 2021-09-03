@@ -11,8 +11,8 @@ export const Languages: FC<LanguagesProps> = ({ languages }) => {
         <Row>
             {languages.map(e => {
                 return (
-                    <Col>
-                        <LanguageCard key={e.name} {...e} />
+                    <Col key={e.name}>
+                        <LanguageCard {...e} />
                     </Col>
                 );
             })}
