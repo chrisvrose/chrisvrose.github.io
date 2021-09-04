@@ -63,6 +63,7 @@
     "miscTech": [
         {
             "type": "dbs",
+            "name": "Database Technologies",
             "content": [
                 { "name": "MySQL", "proficiency": 4 },
                 { "name": "PostgreSQL", "proficiency": 4 },
@@ -70,7 +71,8 @@
             ]
         },
         {
-            "type": "Technologies",
+            "type": "misctech",
+            "name": "Technologies",
             "content": [
                 { "name": "Docker", "proficiency": 4 },
                 { "name": "AWS", "proficiency": 4 },

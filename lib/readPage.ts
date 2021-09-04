@@ -25,7 +25,7 @@ export type matterType = Awaited<ReturnType<typeof readMatter>>;
  * Read front matter and present it
  */
 export async function readMatter() {
-    return parsify(await import('../content/matter.json'));
+    return parsify((await import('../content/matter.json')).default);
 }
 
 /**
@@ -36,5 +36,5 @@ export type projectsType = Awaited<ReturnType<typeof readProjects>>;
  * Read projects and return as JSON
  */
 export async function readProjects() {
-    return parsify(await import('../content/work.json'));
+    return parsify((await import('../content/work.json')).default);
 }
