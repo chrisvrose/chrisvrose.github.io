@@ -12,6 +12,11 @@ const links: SocialLink[] = [
         link: 'https://gitlab.com/chrisvrose',
     },
     {
+        name: 'Linkedin',
+        icon: ['fab', 'linkedin'],
+        link: 'https://www.linkedin.com/in/atreya-bain-162100193/',
+    },
+    {
         name: 'Email',
         icon: ['fas', 'envelope'],
         link: 'mailto:atreyabain@gmail.com',
