@@ -25,7 +25,7 @@ const links: SocialLink[] = [
 
 /** Timings for switcheroo */
 export const timingConfig = {
-    aliases: 2000,
+    aliases: 2500,
 } as const;
 
 /** Description as a text (Markdown) */
