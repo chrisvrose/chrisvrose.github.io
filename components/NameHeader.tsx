@@ -1,9 +1,10 @@
 import { FC, useEffect, useState } from 'react';
+import TextTransition, { presets } from 'react-text-transition';
 import styles from '../styles/NameHeader.module.scss';
 
 export type NameHeaderProps = {
     name: string;
-    alias: string[];
+    aliases: string[];
     resume: string;
 };
 
@@ -11,13 +12,13 @@ export type NameHeaderProps = {
  * Big name with switching alias
  * @param param0 Big Name props
  */
-const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, alias, resume }) {
+const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, resume }) {
     const [canSwitch, setCanSwitch] = useState(true);
     const [currentAliasIndex, setCurrentAliasIndex] = useState(0);
     /** Repeatedly switch between names as long as it is allowed */
     useEffect(() => {
-        setTimeout(() => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % alias.length), 1000);
-    }, [currentAliasIndex, canSwitch, alias.length]);
+        setTimeout(() => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % aliases.length), 2000);
+    }, [currentAliasIndex, canSwitch, aliases.length]);
     return (
         <div className={styles.header}>
             <h1 className={styles.name}>
@@ -27,16 +28,16 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, alias, resum
                 </a>
                 !
             </h1>
-            <h6 className={styles.alias}>
+            <h6 className={styles.alias} onMouseOver={() => setCanSwitch(false)} onMouseOut={() => setCanSwitch(true)}>
                 aka{' '}
-                <span
+                <TextTransition
                     className={styles.nameHighlight}
-                    onMouseOver={() => setCanSwitch(false)}
-                    onMouseOut={() => setCanSwitch(true)}
-                >
-                    {alias[currentAliasIndex]}
-                </span>
+                    text={aliases[currentAliasIndex]}
+                    springConfig={presets.wobbly}
+                    inline
+                />
             </h6>
+            <h6>As of recent, I feel comfortable in working with {}</h6>
         </div>
     );
 };

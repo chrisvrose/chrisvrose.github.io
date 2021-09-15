@@ -1,6 +1,6 @@
 {
     "name": "Atreya Bain",
-    "alias": ["atreyabain", "chrisvrose", "kekvrose"],
+    "aliases": ["atreyabain", "chrisvrose", "kekvrose"],
     "resume": "./static/resume.pdf",
     "desc": "I'm a 3rd year CSE undergrad student.",
     "descLine2": "I like to explore computer science technologies, but most of my work has been on web technology, and formal languages.",
@@ -27,39 +27,7 @@
             "link": "mailto:atreyabain@gmail.com"
         }
     ],
-    "languages": [
-        {
-            "name": "Typescript",
-            "icon": "",
-            "smalldesc": "Hi"
-        },
-        {
-            "name": "Javascript",
-            "icon": "",
-            "smalldesc": "Hi"
-        },
-
-        {
-            "name": "C/C++",
-            "icon": "",
-            "smalldesc": "Hi"
-        },
-        {
-            "name": "Java",
-            "icon": "",
-            "smalldesc": "Hi"
-        },
-        {
-            "name": "Python",
-            "icon": "",
-            "smalldesc": "Hi"
-        },
-        {
-            "name": "PHP",
-            "icon": "",
-            "smalldesc": "Hi"
-        }
-    ],
+    "languages": ["Typescript", "Javascript", "C/C++     ", "Java      ", "Python    ", "PHP       "],
     "miscTech": [
         {
             "type": "dbs",
