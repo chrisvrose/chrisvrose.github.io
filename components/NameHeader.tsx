@@ -2,6 +2,9 @@ import { FC, useEffect, useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 import styles from '../styles/NameHeader.module.scss';
 
+/**
+ * Name heading props, just the basic information
+ */
 export type NameHeaderProps = {
     name: string;
     aliases: string[];
