@@ -1,0 +1,29 @@
+@use './colors.scss' as c;
+
+.name {
+    @media screen and (max-width: 720px) {
+        font-size: 2rem;
+    }
+    font-weight: lighter;
+    font-size: 3rem;
+    font-weight: lighter;
+}
+.alias {
+    font-size: 0.85rem;
+}
+.header {
+    @media screen and (max-width: 720px) {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem;
+    }
+    padding: 5rem;
+    padding-bottom: 3.25rem;
+    text-align: center;
+    // padding: 1rem;
+}
+.nameHighlight {
+    color: c.$accent;
+}
+.nameHighlight:hover {
+    color: c.$accent;
+}

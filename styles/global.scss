@@ -1,0 +1,14 @@
+// colors reference
+@use './colors.scss' as c;
+// color setting
+$body-bg: c.$back;
+$body-color: c.$primary;
+$primary: c.$accent;
+$dark: lighten(c.$back, 10%);
+// import bootstrap scss
+@import '../node_modules/bootstrap/scss/bootstrap';
+
+a {
+    text-decoration: none;
+    color: c.$accent;
+}
