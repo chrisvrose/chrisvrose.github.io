@@ -1,5 +1,6 @@
 import { FC, useEffect, useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
+import { timingConfig } from '../content/matter';
 import styles from '../styles/NameHeader.module.scss';
 
 /**
@@ -20,7 +21,10 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, res
     const [currentAliasIndex, setCurrentAliasIndex] = useState(0);
     /** Repeatedly switch between names as long as it is allowed */
     useEffect(() => {
-        setTimeout(() => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % aliases.length), 2000);
+        setTimeout(
+            () => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % aliases.length),
+            timingConfig.aliases
+        );
     }, [currentAliasIndex, canSwitch, aliases.length]);
     return (
         <div className={styles.header}>
@@ -40,7 +44,6 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, res
                     inline
                 />
             </h6>
-            <h6>As of recent, I feel comfortable in working with {}</h6>
         </div>
     );
 };

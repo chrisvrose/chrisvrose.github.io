@@ -1,3 +1,5 @@
+import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types';
+
 /**
  * Stringify then parsify, makes processing large files easier and removes functions
  * @typeparam T Object in question
@@ -7,6 +9,11 @@
 export function parsify<T>(arg: T): T {
     return JSON.parse(JSON.stringify(arg));
 }
+
+/**
+ * Social Link
+ */
+export type SocialLink = { name: string; icon: [IconPrefix, IconName]; link: string };
 
 /**
  * Generic type to get result of a promise
