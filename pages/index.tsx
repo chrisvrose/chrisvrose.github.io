@@ -15,7 +15,7 @@ export type HomeContentProps = ContentProps<typeof matter>;
 
 config.autoAddCss = false;
 library.add(faGithub, faEnvelope, faLinkedin, faGlobe, faGitlab);
-// FIXME finalize design
+
 const Home: FC<HomeContentProps> = function Home({ content }) {
     return (
         <>
