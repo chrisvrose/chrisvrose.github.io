@@ -17,6 +17,7 @@ const Header: FC<HeaderProps> = function Header({ title }) {
             <meta name='description' content='Landing page for kekvrose.me' />
             <link rel='manifest' href='/manifest.json' />
             <meta name='theme-color' content='#bc7100' />
+            <link rel='apple-touch-icon' sizes='192x192' href='/icon/192.png' />
         </Head>
     );
 };
