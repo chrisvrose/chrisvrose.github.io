@@ -15,7 +15,7 @@ const Header: FC<HeaderProps> = function Header({ title }) {
             <title>{title}</title>
             <link rel='shortcut icon' href='/icon/16.jpeg' />
             <meta name='description' content='Landing page for kekvrose.me' />
-            <link rel='manifest' href='/static/manifest.json' />
+            <link rel='manifest' href='/manifest.json' />
         </Head>
     );
 };
