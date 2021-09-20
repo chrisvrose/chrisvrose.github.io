@@ -1,5 +1,5 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { FC } from 'react';
+import type { FC } from 'react';
 import { SocialLink } from '../lib/misc';
 import styles from '../styles/footer.module.scss';
 

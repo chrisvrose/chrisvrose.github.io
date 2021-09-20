@@ -1,4 +1,4 @@
-import { SocialLink } from '../lib/misc';
+import type { SocialLink } from '../lib/misc';
 import marked from 'marked';
 const links: SocialLink[] = [
     {

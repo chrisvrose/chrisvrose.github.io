@@ -10,7 +10,7 @@ import '../styles/global.scss';
 function MyApp({ Component, pageProps }: AppProps) {
     return (
         <>
-            <Header title='Hello!'></Header>
+            <Header title='Hello!' />
             <Component {...pageProps} />
         </>
     );

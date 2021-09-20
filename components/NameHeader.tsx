@@ -1,4 +1,5 @@
-import { FC, useEffect, useState } from 'react';
+import type { FC } from 'react';
+import { useEffect, useState } from 'react';
 import TextTransition, { presets } from 'react-text-transition';
 import { timingConfig } from '../content/matter';
 import styles from '../styles/NameHeader.module.scss';
