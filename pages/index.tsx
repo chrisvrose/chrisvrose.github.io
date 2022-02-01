@@ -23,9 +23,6 @@ const Home: FC<HomeContentProps> = function Home({ content }) {
             <div className={`container ${styles.para}`}>
                 <NameHeader {...content} />
                 <div className={styles.desc} dangerouslySetInnerHTML={{ __html: content.desc }}></div>
-                {/* <p className={styles.desc}>{content.descLine2}</p> */}
-
-                {/* <Languages languages={content.languages} /> */}
                 <br />
             </div>
             <Footer links={content.links} />

@@ -30,7 +30,7 @@ export const timingConfig = {
 
 /** Description as a text (Markdown) */
 const descriptionText = `
-I'm a 3rd year CSE undergrad student from R.V. College of Engineering, Bangalore, India.
+I'm a 4th year CSE undergrad student from R.V. College of Engineering, Bangalore, India.
 
 I like to explore computer science technologies, but most of my work has been on web technologies, and formal languages.
 
