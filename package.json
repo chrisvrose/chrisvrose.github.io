@@ -21,8 +21,8 @@
         "@fortawesome/react-fontawesome": "^0.1.15",
         "@popperjs/core": "^2.9.3",
         "bootstrap": "^5.1.0",
-        "marked": "^3.0.4",
-        "next": "^11.1.2",
+        "marked": "^4.0.16",
+        "next": "^12.1.6",
         "next-pwa": "^5.3.1",
         "react": "^17.0.2",
         "react-bootstrap": "^1.6.1",
@@ -39,6 +39,7 @@
         "printWidth": 120
     },
     "devDependencies": {
+        "@types/marked": "^4.0.3",
         "@types/node": "^14.14.21",
         "@types/react": "^17.0.0",
         "eslint": "7.32.0",

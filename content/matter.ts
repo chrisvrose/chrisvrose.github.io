@@ -1,5 +1,5 @@
 import type { SocialLink } from '../lib/misc';
-import marked from 'marked';
+import { marked } from 'marked';
 const links: SocialLink[] = [
     {
         name: 'Github',
