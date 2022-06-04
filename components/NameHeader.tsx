@@ -10,14 +10,14 @@ import styles from '../styles/NameHeader.module.scss';
 export type NameHeaderProps = {
     name: string;
     aliases: string[];
-    resume: string;
+    nameLink: string;
 };
 
 /**
  * Big name with switching alias
  * @param param0 Big Name props
  */
-const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, resume }) {
+const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, nameLink }) {
     const [canSwitch, setCanSwitch] = useState(true);
     const [currentAliasIndex, setCurrentAliasIndex] = useState(0);
     /** Repeatedly switch between names as long as it is allowed */
@@ -31,7 +31,7 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, res
         <div className={styles.header}>
             <h1 className={styles.name}>
                 Hi, I&apos;m{' '}
-                <a className={styles.nameHighlight} href={resume}>
+                <a className={styles.nameHighlight} href={nameLink}>
                     {name}
                 </a>
                 !

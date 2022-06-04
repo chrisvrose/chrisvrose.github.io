@@ -1,6 +1,5 @@
 import type { FC } from 'react';
 import type { GetStaticProps } from 'next';
-// import { readMatter, matterType } from '../lib/readPage';
 import type { ContentProps } from '../lib/misc';
 import NameHeader from '../components/NameHeader';
 import { config, library } from '@fortawesome/fontawesome-svg-core';

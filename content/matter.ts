@@ -43,7 +43,7 @@ const desc = marked(descriptionText);
 export const matter = {
     name: 'Atreya Bain',
     aliases: ['atreyabain', 'chrisvrose', 'kekvrose'],
-    resume: './static/resume.pdf',
+    nameLink: 'https://github.com/chrisvrose',
     desc,
     links,
 };
