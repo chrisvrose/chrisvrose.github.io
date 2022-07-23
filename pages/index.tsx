@@ -11,11 +11,20 @@ import '@fortawesome/fontawesome-svg-core/styles.css';
 import { Footer } from '../components/Footer';
 import { matter } from '../content/matter';
 
+/**
+ * Content props - will be the content read up put into the 'content' key
+ */
 export type HomeContentProps = ContentProps<typeof matter>;
 
+// fontawesome config - add the characters
 config.autoAddCss = false;
 library.add(faGithub, faEnvelope, faLinkedin, faGlobe, faGitlab);
 
+/**
+ * (Landing) page component
+ * @param param0 content
+ * @returns page component
+ */
 const Home: FC<HomeContentProps> = function Home({ content }) {
     return (
         <>

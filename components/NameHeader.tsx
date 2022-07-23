@@ -20,13 +20,15 @@ export type NameHeaderProps = {
 const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, nameLink }) {
     const [canSwitch, setCanSwitch] = useState(true);
     const [currentAliasIndex, setCurrentAliasIndex] = useState(0);
-    /** Repeatedly switch between names as long as it is allowed */
+
+    // Repeatedly switch between names as long as it is allowed (not hovered on)
     useEffect(() => {
         setTimeout(
             () => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % aliases.length),
             timingConfig.aliases
         );
     }, [currentAliasIndex, canSwitch, aliases.length]);
+
     return (
         <div className={styles.header}>
             <h1 className={styles.name}>

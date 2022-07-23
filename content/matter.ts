@@ -1,5 +1,9 @@
 import type { SocialLink } from '../lib/misc';
 import { marked } from 'marked';
+
+/**
+ * Social links
+ */
 const links: SocialLink[] = [
     {
         name: 'Github',
@@ -24,9 +28,9 @@ const links: SocialLink[] = [
 ];
 
 /** Timings for switcheroo */
-export const timingConfig = {
+export const timingConfig = Object.freeze({
     aliases: 2500,
-} as const;
+});
 
 /** Description as a text (Markdown) */
 const descriptionText = `
