@@ -18,7 +18,7 @@ const links: SocialLink[] = [
     {
         name: 'Linkedin',
         icon: ['fab', 'linkedin'],
-        link: 'https://www.linkedin.com/in/atreya-bain-162100193/',
+        link: 'https://www.linkedin.com/in/atreyabn/',
     },
     {
         name: 'Email',
@@ -34,11 +34,12 @@ export const timingConfig = Object.freeze({
 
 /** Description as a text (Markdown) */
 const descriptionText = `
-I'm a 4th year CSE undergrad student from R.V. College of Engineering, Bangalore, India.
+I'm a software engineer, working at Cisco Systems (Pvt Ltd), Bangalore, India.
 
-I like to explore computer science technologies, but most of my work has been on web technologies, and formal languages.
+I like to explore computer science technologies, but most of my work has been on distributed systems, web technologies, and formal languages.
 
-Check out my most recent work on [HSQL](https://hsql.kekvrose.me)!
+My previous work on HSQL is documented in a blog [here](https://hsql.kekvrose.me)!
+
 `;
 /** Description parsed into */
 const desc = marked(descriptionText);
@@ -46,7 +47,7 @@ const desc = marked(descriptionText);
 /** Exported content */
 export const matter = {
     name: 'Atreya Bain',
-    aliases: ['atreyabain', 'chrisvrose', 'kekvrose'],
+    aliases: ['atreyabain', 'atreyabn', 'chrisvrose', 'kekvrose'],
     nameLink: 'https://github.com/chrisvrose',
     desc,
     links,
