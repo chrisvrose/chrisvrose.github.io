@@ -1,10 +1,21 @@
 import type { SocialLink } from '../lib/misc';
 import { marked } from 'marked';
 
+
+/** Description as a text (Markdown) */
+const descriptionText = `
+I'm a software engineer with ~3 years of experience, currently studying Software Systems Engineering at University College London.
+
+I like to explore computer science technologies, but most of my work has been on distributed systems, web technologies, and formal languages.
+
+My previous work on HSQL is documented in a blog [here](https://hsql.kekvrose.me)!
+
+`;
+
 /**
  * Social links
  */
-const links: SocialLink[] = [
+const socialLinks: SocialLink[] = [
     {
         name: 'Github',
         icon: ['fab', 'github'],
@@ -27,28 +38,19 @@ const links: SocialLink[] = [
     },
 ];
 
-/** Timings for switcheroo */
-export const timingConfig = Object.freeze({
-    aliases: 2500,
-});
-
-/** Description as a text (Markdown) */
-const descriptionText = `
-I'm a software engineer, working at Cisco Systems (Pvt Ltd), Bangalore, India.
-
-I like to explore computer science technologies, but most of my work has been on distributed systems, web technologies, and formal languages.
-
-My previous work on HSQL is documented in a blog [here](https://hsql.kekvrose.me)!
-
-`;
-/** Description parsed into */
-const desc = marked(descriptionText);
+/** Parsed Description */
+const descriptionTextParsed = marked(descriptionText);
 
 /** Exported content */
 export const matter = {
     name: 'Atreya Bain',
     aliases: ['atreyabain', 'atreyabn', 'chrisvrose', 'kekvrose'],
     nameLink: 'https://github.com/chrisvrose',
-    desc,
-    links,
+    desc: descriptionTextParsed,
+    links: socialLinks,
 };
+
+/** Timings for switcheroo */
+export const timingConfig = Object.freeze({
+    aliases: 2500,
+});
