@@ -8,7 +8,7 @@ I'm a software engineer currently studying Software Systems Engineering at Unive
 
 I like to explore computer science technologies, but most of my work has been on distributed systems, web technologies, and formal languages.
 
-I like to documented my work in a blog [here](https://log.kekvrose.me)!
+Here's some of the things I've worked on: [here](https://log.kekvrose.me)!
 
 `;
 
