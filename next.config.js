@@ -1,8 +1,12 @@
-const withPWA = require('next-pwa');
+const withPWA = require('next-pwa')({
+    dest: 'public',
+    publicExcludes: ['!static/**/*'],
+});
 
+/**
+ * @type {import('next').NextConfig}
+ */
 module.exports = withPWA({
-    pwa: {
-        dest: 'public',
-        publicExcludes: ['!static/**/*'],
-    },
+    // default config
+    output: 'export',
 });

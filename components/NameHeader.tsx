@@ -25,7 +25,7 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, nam
     useEffect(() => {
         setTimeout(
             () => canSwitch && setCurrentAliasIndex((currentAliasIndex + 1) % aliases.length),
-            timingConfig.aliases
+            timingConfig.aliases,
         );
     }, [currentAliasIndex, canSwitch, aliases.length]);
 
@@ -40,12 +40,9 @@ const NameHeader: FC<NameHeaderProps> = function NameHeader({ name, aliases, nam
             </h1>
             <h6 className={styles.alias} onMouseOver={() => setCanSwitch(false)} onMouseOut={() => setCanSwitch(true)}>
                 aka{' '}
-                <TextTransition
-                    className={styles.nameHighlight}
-                    text={aliases[currentAliasIndex]}
-                    springConfig={presets.wobbly}
-                    inline
-                />
+                <TextTransition className={styles.nameHighlight} springConfig={presets.wobbly} inline>
+                    {aliases[currentAliasIndex]}
+                </TextTransition>
             </h6>
         </div>
     );
