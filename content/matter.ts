@@ -1,14 +1,13 @@
 import type { SocialLink } from '../lib/misc';
 import { marked } from 'marked';
 
-
 /** Description as a text (Markdown) */
 const descriptionText = `
 I'm a software engineer currently studying Software Systems Engineering at University College London.
 
 I like to explore computer science technologies, but most of my work has been on distributed systems, web technologies, and formal languages.
 
-Here's some of the things I've worked on: [here](https://log.kekvrose.me)!
+I've worked on a few things, feel free to check them out [here](https://log.kekvrose.me)!
 
 `;
 
