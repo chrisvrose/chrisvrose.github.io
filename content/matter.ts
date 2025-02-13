@@ -38,7 +38,7 @@ const socialLinks: SocialLink[] = [
 ];
 
 /** Parsed Description */
-const descriptionTextParsed = marked(descriptionText);
+const descriptionTextParsed = marked(descriptionText,{async:false});
 
 /** Exported content */
 export const matter = {
