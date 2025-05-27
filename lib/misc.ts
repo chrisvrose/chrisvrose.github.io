@@ -1,7 +1,7 @@
 import { IconName, IconPrefix } from '@fortawesome/fontawesome-common-types';
 
 /**
- * Social Link
+ * Social Link -- indexed by name
  */
 export type SocialLink = { name: string; icon: [IconPrefix, IconName]; link: string };
 

@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import type { FC } from 'react';
-import { SocialLink } from '../lib/misc';
+import type { SocialLink } from '../lib/misc';
 import styles from '../styles/footer.module.scss';
 
 export type FooterProps = {
@@ -9,9 +9,9 @@ export type FooterProps = {
 export const Footer: FC<FooterProps> = function ({ links }) {
     return (
         <footer className={styles.footer}>
-            {links.map((e, i) => {
+            {links.map((e) => {
                 return (
-                    <span key={i}>
+                    <span key={e.name}>
                         <a href={e.link} title={e.name} className={styles.footerIcon}>
                             <FontAwesomeIcon icon={e.icon} />
                         </a>

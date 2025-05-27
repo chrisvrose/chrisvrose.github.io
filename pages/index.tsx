@@ -38,9 +38,8 @@ const Home: FC<HomeContentProps> = function Home({ content }) {
     );
 };
 
-export const getStaticProps: GetStaticProps = async context => {
+export const getStaticProps: GetStaticProps = async _context => {
     const content = matter;
-
     return {
         props: {
             content,
