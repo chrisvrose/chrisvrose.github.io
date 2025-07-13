@@ -5,10 +5,9 @@ import { marked } from 'marked';
 const descriptionText = `
 I'm a software engineer currently studying Software Systems Engineering at University College London.
 
-I like to explore computer science technologies, but most of my work has been on distributed systems, web technologies, and formal languages.
+I like to explore computer science technologies, but most of my work has been on web technologies, distributed systems, and (formal) languages.
 
-I've worked on a few things, feel free to check them out [here](https://log.kekvrose.me)!
-
+But that hasn't stopped me from trying new things (say, [a whole emulator](https://log.kekvrose.me/2025/01/25/bytepusher-a-gentle-shove-into-emulating/), or a [Minecraft Server Manager](https://github.com/chrisvrose/mcdisco)!)
 `;
 
 /**
@@ -16,14 +15,14 @@ I've worked on a few things, feel free to check them out [here](https://log.kekv
  */
 const socialLinks: SocialLink[] = [
     {
+        name: 'Blog',
+        icon: ['fas', 'rss-square'],
+        link: 'https://log.kekvrose.me',
+    },
+    {
         name: 'Github',
         icon: ['fab', 'github'],
         link: 'https://github.com/chrisvrose',
-    },
-    {
-        name: 'Gitlab',
-        icon: ['fab', 'gitlab'],
-        link: 'https://gitlab.com/chrisvrose',
     },
     {
         name: 'Linkedin',
@@ -38,7 +37,7 @@ const socialLinks: SocialLink[] = [
 ];
 
 /** Parsed Description */
-const descriptionTextParsed = marked(descriptionText,{async:false});
+const descriptionTextParsed = marked(descriptionText, { async: false });
 
 /** Exported content */
 export const matter = {
