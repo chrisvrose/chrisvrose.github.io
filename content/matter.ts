@@ -7,7 +7,7 @@ I'm a software engineer currently studying Software Systems Engineering at Unive
 
 I like to explore computer science technologies, but most of my work has been on web technologies, distributed systems, and (formal) languages.
 
-But that hasn't stopped me from trying new things (say, [a whole emulator](https://log.kekvrose.me/2025/01/25/bytepusher-a-gentle-shove-into-emulating/), or a [Minecraft Server Manager](https://github.com/chrisvrose/mcdisco)!)
+I recently worked on a [a whole emulator](https://log.kekvrose.me/2025/01/25/bytepusher-a-gentle-shove-into-emulating/)!
 `;
 
 /**
